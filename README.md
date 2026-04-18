@@ -84,18 +84,20 @@ Audits TLS endpoints for **post-quantum cryptography readiness** and generates A
 - Flags systems exposed to "Harvest Now, Decrypt Later" attacks
 - Outputs structured risk reports per scanned endpoint
 
-🔗 **GitHub:** [PulindGadhia/quantumshield-pqc-scanner](https://github.com/PulindGadhia/quantumshield-pqc-scanner) &nbsp;|&nbsp; 🎥 **Demo:** Coming Soon
+🔗 **GitHub:** [PulindGadhia/quantumshield-pqc-scanner](https://github.com/PulindGadhia/quantumshield-pqc-scanner) &nbsp;|&nbsp;
 
-📸 **Preview:**
+<h4>📸 Preview</h4>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/PulindGadhia/quantumshield-pqc-scanner/main/docs/dashboard.png" width="90%" alt="QuantumShield Dashboard" onerror="this.style.display='none'"/>
-<img src="https://raw.githubusercontent.com/PulindGadhia/quantumshield-pqc-scanner/main/docs/scan_result.png" width="90%" alt="Scan Result" onerror="this.style.display='none'"/>
+
+<img src="https://raw.githubusercontent.com/PulindGadhia/quantumshield-pqc-scanner/main/Screenshot%202026-03-11%20220127.png" width="50%" />
+<br><br>
+
+<img src="https://raw.githubusercontent.com/PulindGadhia/quantumshield-pqc-scanner/main/Screenshot%202026-03-15%20214345.png" width="50%" />
+
 </div>
 
 </td>
-</tr>
-</table>
 
 ---
 
