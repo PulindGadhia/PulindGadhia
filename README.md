@@ -7,17 +7,15 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=1000&color=4ADE80&center=true&vCenter=true&width=720&lines=AI+%26+ML+Student+%40+Marwadi+University;Focused+on+Building+Practical+AI+Systems;Deepfake+Detection+%7C+Quantum+Security+%7C+Cloud;Actively+Contributing+to+Open+Source;Learning+by+Building+and+Solving+Real+Problems)](https://git.io/typing-svg)
 
 <br/><br/>
-
 <p>
-  <img src="https://img.shields.io/badge/CSE%20AI%20%26%20ML-Marwadi%20University-16a34a?style=flat-square&logo=mortarboard&logoColor=white"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Location-Rajkot%2C%20Gujarat-22c55e?style=flat-square&logo=googlemaps&logoColor=white"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Focus-AI%20Engineering-4ade80?style=flat-square&logo=openai&logoColor=0a2e1a"/>
+  <img src="https://img.shields.io/badge/Focus-AI%20Engineering-4ade80?style=flat-square"/>
   &nbsp;
   <img src="https://img.shields.io/badge/Currently%20Learning-Advanced%20Git%20Workflows-22c55e?style=flat-square"/>
   &nbsp;
-  <img src="https://img.shields.io/badge/Building-AI%20Tools-22c55e?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Building-Practical%20AI%20Tools-22c55e?style=flat-square"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Interests-AI%20Security%20%7C%20ML%20Systems-16a34a?style=flat-square"/>
+  &nbsp;
 </p>
 
 </div>
