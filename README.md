@@ -1,23 +1,23 @@
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                        HERO SECTION                            -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a2e1a,50:0f5132,100:145a32&height=200&section=header&text=Pulind%20Gadhia&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Engineering%20Intelligence%2C%20One%20Model%20at%20a%20Time&descAlignY=58&descSize=18&descColor=4ade80" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a2e1a,50:0f5132,100:145a32&height=200&section=header&text=Pulind%20Gadhia&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20intelligent%20systems%2C%20one%20model%20at%20a%20time&descAlignY=58&descSize=18&descColor=4ade80" width="100%"/>
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=4ADE80&center=true&vCenter=true&width=680&lines=AI+%26+ML+Engineering+Student+%F0%9F%8E%93;Building+Real+AI+Tools+That+Matter;Deepfake+Audio+%E2%80%A2+Quantum+Security+%E2%80%A2+Cloud;Open+Source+Enthusiast;Actively+Contributing+to+Open+Source)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=1000&color=4ADE80&center=true&vCenter=true&width=720&lines=AI+%26+ML+Student+%40+Marwadi+University;Focused+on+Building+Practical+AI+Systems;Deepfake+Detection+%7C+Quantum+Security+%7C+Cloud;Actively+Contributing+to+Open+Source;Learning+by+Building+and+Solving+Real+Problems)](https://git.io/typing-svg)
 
-<br/>
+<br/><br/>
 
 <p>
   <img src="https://img.shields.io/badge/CSE%20AI%20%26%20ML-Marwadi%20University-16a34a?style=flat-square&logo=mortarboard&logoColor=white"/>
   &nbsp;
   <img src="https://img.shields.io/badge/Location-Rajkot%2C%20Gujarat-22c55e?style=flat-square&logo=googlemaps&logoColor=white"/>
   &nbsp;
-  <img src="https://img.shields.io/badge/Goal-AI%20Engineer-4ade80?style=flat-square&logo=openai&logoColor=0a2e1a"/>
+  <img src="https://img.shields.io/badge/Focus-AI%20Engineering-4ade80?style=flat-square&logo=openai&logoColor=0a2e1a"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Currently%20Learning-Advanced%20Git%20Workflows-22c55e?style=flat-square"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Building-AI%20Tools-22c55e?style=flat-square"/>
 </p>
 
 </div>
@@ -98,6 +98,8 @@ Audits TLS endpoints for **post-quantum cryptography readiness** and generates A
 </div>
 
 </td>
+</tr>
+</table>
 
 ---
 
@@ -109,9 +111,10 @@ Audits TLS endpoints for **post-quantum cryptography readiness** and generates A
 
 ```
   Domain               │  Project                      │  Problem Solved
-  ─────────────────────┼───────────────────────────────┼────────────────────────────────────────
+  ─────────────────────┼───────────────────────────────┼──────────────────────────────────
   🎙️ Audio AI          │  AI Voice Detector             │  Classify real vs synthetic speech
   🔐 Quantum Security  │  QuantumShield PQC Scanner     │  Audit TLS for post-quantum readiness
+  ☁️ Cloud             │  GCP Arcade Facilitator 2025   │  Champion Tier · Cohort 2
 ```
 
 ---
@@ -128,81 +131,44 @@ Audits TLS endpoints for **post-quantum cryptography readiness** and generates A
 
 **Languages**
 
-![Python](https://img.shields.io/badge/Python-0a2e1a?style=for-the-badge&logo=python&logoColor=4ade80)
-![C++](https://img.shields.io/badge/C++-0a2e1a?style=for-the-badge&logo=cplusplus&logoColor=60a5fa)
-![Java](https://img.shields.io/badge/Java-0a2e1a?style=for-the-badge&logo=openjdk&logoColor=f97316)
-![C](https://img.shields.io/badge/C-0a2e1a?style=for-the-badge&logo=c&logoColor=60a5fa)
-![SQL](https://img.shields.io/badge/SQL-0a2e1a?style=for-the-badge&logo=postgresql&logoColor=4ade80)
-![MATLAB](https://img.shields.io/badge/MATLAB-0a2e1a?style=for-the-badge&logo=mathworks&logoColor=f97316)
+![Python](https://img.shields.io/badge/Python-0a2e1a?style=for-the-badge&logo=python&logoColor=4ade80&logoWidth=25)
+![C++](https://img.shields.io/badge/C++-0a2e1a?style=for-the-badge&logo=cplusplus&logoColor=60a5fa&logoWidth=25)
+![Java](https://img.shields.io/badge/Java-0a2e1a?style=for-the-badge&logo=openjdk&logoColor=f97316&logoWidth=25)
+![C](https://img.shields.io/badge/C-0a2e1a?style=for-the-badge&logo=c&logoColor=60a5fa&logoWidth=25)
+![SQL](https://img.shields.io/badge/SQL-0a2e1a?style=for-the-badge&logo=postgresql&logoColor=4ade80&logoWidth=25)
+![MATLAB](https://img.shields.io/badge/MATLAB-0a2e1a?style=for-the-badge&logo=mathworks&logoColor=f97316&logoWidth=25)
 
 </td>
 <td valign="top" width="25%">
 
 **AI · ML · Audio**
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-0a2e1a?style=for-the-badge&logo=scikitlearn&logoColor=f97316)
-![NumPy](https://img.shields.io/badge/NumPy-0a2e1a?style=for-the-badge&logo=numpy&logoColor=60a5fa)
-![Pandas](https://img.shields.io/badge/Pandas-0a2e1a?style=for-the-badge&logo=pandas&logoColor=4ade80)
-![librosa](https://img.shields.io/badge/librosa-0a2e1a?style=for-the-badge&logo=python&logoColor=fbbf24)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-0a2e1a?style=for-the-badge&logo=python&logoColor=4ade80)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-0a2e1a?style=for-the-badge&logo=scikitlearn&logoColor=f97316&logoWidth=25)
+![NumPy](https://img.shields.io/badge/NumPy-0a2e1a?style=for-the-badge&logo=numpy&logoColor=60a5fa&logoWidth=25)
+![Pandas](https://img.shields.io/badge/Pandas-0a2e1a?style=for-the-badge&logo=pandas&logoColor=4ade80&logoWidth=25)
+![librosa](https://img.shields.io/badge/librosa-0a2e1a?style=for-the-badge&logo=python&logoColor=fbbf24&logoWidth=25)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-0a2e1a?style=for-the-badge&logo=python&logoColor=4ade80&logoWidth=25)
 
 </td>
-<td valign="top" width="35%">
+<td valign="top" width="25%">
 
 **Security · Cloud**
 
-![Cryptography](https://img.shields.io/badge/cryptography-0a2e1a?style=for-the-badge&logo=letsencrypt&logoColor=4ade80)
-![TLS/SSL](https://img.shields.io/badge/TLS%20%2F%20SSL-0a2e1a?style=for-the-badge&logo=openssl&logoColor=60a5fa)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-0a2e1a?style=for-the-badge&logo=googlecloud&logoColor=38bdf8)
-![Linux](https://img.shields.io/badge/Linux-0a2e1a?style=for-the-badge&logo=linux&logoColor=fbbf24)
+![Cryptography](https://img.shields.io/badge/cryptography-0a2e1a?style=for-the-badge&logo=letsencrypt&logoColor=4ade80&logoWidth=25)
+![TLS/SSL](https://img.shields.io/badge/TLS%20%2F%20SSL-0a2e1a?style=for-the-badge&logo=openssl&logoColor=60a5fa&logoWidth=25)
+![Google Cloud](https://img.shields.io/badge/Google%20Cloud-0a2e1a?style=for-the-badge&logo=googlecloud&logoColor=38bdf8&logoWidth=25)
+![Linux](https://img.shields.io/badge/Linux-0a2e1a?style=for-the-badge&logo=linux&logoColor=fbbf24&logoWidth=25)
 
 </td>
 <td valign="top" width="25%">
 
 **Tools · Workflow**
 
-![VS Code](https://img.shields.io/badge/VS%20Code-0a2e1a?style=for-the-badge&logo=visualstudiocode&logoColor=60a5fa)
-![Git](https://img.shields.io/badge/Git-0a2e1a?style=for-the-badge&logo=git&logoColor=f97316)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0a2e1a?style=for-the-badge&logo=githubactions&logoColor=4ade80)
-![Jupyter](https://img.shields.io/badge/Jupyter-0a2e1a?style=for-the-badge&logo=jupyter&logoColor=fbbf24)
-![Kaggle](https://img.shields.io/badge/Kaggle-0a2e1a?style=for-the-badge&logo=kaggle&logoColor=38bdf8)
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                      ACHIEVEMENTS                              -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## `$ Achievements`
-
-<table>
-<tr>
-<td width="50%">
-
-**Projects shipped:**
-
-```
-✦ AI Voice Detector
-  → Applied ML to deepfake audio detection
-
-✦ QuantumShield PQC Scanner
-  → Built a post-quantum TLS audit tool
-```
-
-</td>
-<td width="50%">
-
-**Recognition:**
-
-```
-✦ Google Cloud Arcade Facilitator 2025
-  → Cohort 2
-  → Achieved Champion Tier
-```
+![VS Code](https://img.shields.io/badge/VS%20Code-0a2e1a?style=for-the-badge&logo=visualstudiocode&logoColor=60a5fa&logoWidth=25)
+![Git](https://img.shields.io/badge/Git-0a2e1a?style=for-the-badge&logo=git&logoColor=f97316&logoWidth=25)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0a2e1a?style=for-the-badge&logo=githubactions&logoColor=4ade80&logoWidth=25)
+![Jupyter](https://img.shields.io/badge/Jupyter-0a2e1a?style=for-the-badge&logo=jupyter&logoColor=fbbf24&logoWidth=25)
+![Kaggle](https://img.shields.io/badge/Kaggle-0a2e1a?style=for-the-badge&logo=kaggle&logoColor=38bdf8&logoWidth=25)
 
 </td>
 </tr>
@@ -216,31 +182,65 @@ Audits TLS endpoints for **post-quantum cryptography readiness** and generates A
 
 ## `$ Currently Focused On`
 
-| Priority | Area | Direction |
-|:---:|---|---|
-| 🔥 **1** | **ML Fundamentals** | Models from scratch — regression, trees, SVMs, ensembles |
-| 🧠 **2** | **Deep Learning** | Actively exploring — neural nets, CNNs, sequence models |
-| ☁️ **3** | **Google Cloud** | Associate Cloud Engineer certification path |
-| 🔐 **4** | **AI Security** | Extending deepfake detection and quantum-safe tooling |
+<table>
+<thead>
+<tr>
+<th align="center">Priority</th>
+<th align="left">Area</th>
+<th align="left">Direction</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center"><strong>01</strong></td>
+<td><strong>ML Fundamentals</strong></td>
+<td>Learning how to build models from scratch like regression, trees, SVMs, and ensembles</td>
+</tr>
+
+<tr>
+<td align="center"><strong>02</strong></td>
+<td><strong>Deep Learning</strong></td>
+<td>Learning neural networks, CNNs, and sequence models by practicing</td>
+</tr>
+
+<tr>
+<td align="center"><strong>03</strong></td>
+<td><strong>Google Cloud</strong></td>
+<td>Preparing for the Associate Cloud Engineer exam</td>
+</tr>
+
+<tr>
+<td align="center"><strong>04</strong></td>
+<td><strong>AI Security</strong></td>
+<td>Working on deepfake detection and basic quantum-safe ideas</td>
+</tr>
+</tbody>
+</table>
 
 ---
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     DEVELOPER MINDSET                          -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
 
 ## `$ How I Think`
 
-I don't rush to code. I start by understanding the problem well, break it down, build a working version — even if messy — then refine it. Depth beats breadth: knowing a tool deeply is more useful than knowing ten tools shallowly. I learn best by building real things, reading documentation, and iterating on what breaks.
+Do not start coding immediately.
 
-**What guides my work:**
+First, understand the problem clearly. Then break it into smaller parts and build a simple working version. After that, improve it step by step.
 
-- Clarity over cleverness — readable code is better code
-- Understand the math, not just the API
-- Build real things, not just follow tutorials
-- Go where the problems are genuinely unsolved
+Focus on depth over breadth. Understanding one concept well is more valuable than knowing many without clarity.
+
+Learning happens through building projects, reading documentation, and improving based on mistakes.
 
 ---
+
+## `$ Principles I Follow`
+
+- Write simple and clear code  
+- Focus on understanding concepts, not just using tools  
+- Build real projects, not just small demos  
+- Improve step by step  
+- Work on problems that are useful
+  
+--- 
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--                     GITHUB STATS                               -->
@@ -313,19 +313,21 @@ I don't rush to code. I start by understanding the problem well, break it down, 
 
 </div>
 
----
+
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--                      QUOTE                                     -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-<div align="center">
+<hr>
 
-> *"Understanding a problem deeply is more valuable than solving it quickly."*
+<p align="center">
+<i>"Understanding a problem deeply is more valuable than solving it quickly."</i>
+</p>
 
-</div>
+<hr>
 
----
+
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--                      CONNECT                                   -->
@@ -346,14 +348,19 @@ I don't rush to code. I start by understanding the problem well, break it down, 
 <a href="https://github.com/PulindGadhia?tab=repositories" target="_blank">
   <img src="https://img.shields.io/badge/Repositories-Explore%20My%20Work-16a34a?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
-
+&nbsp;
+<a href="mailto:gadhiapulind@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-gadhiapulind%40gmail.com-d14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
 <br/><br/>
 
-> 💬 Open to: **project collaborations · mentorship · hackathons · cold DMs from curious builders**
+<hr>
 
-</div>
+<p align="center">
+💬 <b>Open to collaborations, mentorship, hackathons, and meaningful conversations</b>
+</p>
 
----
+<hr>
 
 <div align="center">
 
