@@ -286,19 +286,11 @@ Learning happens through building projects, reading documentation, and improving
 
 
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                  CONTRIBUTION SNAKE                            -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+## `$ GitHub Contribution Game`
 
-## `$ Contribution Rocket`
+![Space Shooter Game](https://raw.githubusercontent.com/PulindGadhia/PulindGadhia/main/game.gif)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PulindGadhia/PulindGadhia/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PulindGadhia/PulindGadhia/output/github-contribution-grid-snake.svg" />
-  <img alt="github contribution grid rocket animation" src="https://raw.githubusercontent.com/PulindGadhia/PulindGadhia/output/github-contribution-grid-snake-dark.svg" />
-</picture>
-
-</div>
+---
 
 
 
