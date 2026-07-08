@@ -34,88 +34,21 @@ class PulindGadhia:
     location    = "Rajkot, Gujarat, India 🇮🇳"
     goal        = "AI Engineer"
 
-    built = [
-        "AI-powered deepfake audio detector  (Python · scikit-learn · librosa)",
-        "Quantum-Ready TLS scanner with risk scoring  (Python · cryptography · PQC)",
-    ]
-
-    exploring   = ["Deep Learning (actively exploring)", "Google Cloud", "AI Security"]
     languages   = ["Python", "C++", "Java", "C", "SQL"]
+
+    current_focus = [
+        "Building Qyverion",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Cloud Computing",
+        "Cross-Platform Development",
+    ]
 
     philosophy  = "Build first. Understand deeply. Ship when it matters."
 ```
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                   FEATURED PROJECTS                            -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## `$ Featured Projects`
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🎙️ AI Voice Detector
-
-[![Python](https://img.shields.io/badge/Python-0a2e1a?style=for-the-badge&logo=python&logoColor=4ade80)](#) [![scikit-learn](https://img.shields.io/badge/scikit--learn-0a2e1a?style=for-the-badge&logo=scikitlearn&logoColor=f97316)](#) [![Audio AI](https://img.shields.io/badge/Audio%20AI-0a2e1a?style=for-the-badge&logo=audacity&logoColor=4ade80)](#)
-
-Binary audio classifier that distinguishes **real human speech from AI-generated voices** — built to address the growing threat of voice deepfakes.
-
-- Extracts MFCCs and spectral features via `librosa`
-- Trains a supervised classifier on labeled audio datasets
-- Applicable to voice authentication and media integrity verification
-
-🔗 **GitHub:** [PulindGadhia/Ai_Voice_Detector](https://github.com/PulindGadhia/Ai_Voice_Detector) &nbsp;|&nbsp; 🎥 **Demo:** Coming Soon
-
-</td>
-<td width="50%" valign="top">
-
-### 🔐 QuantumShield PQC Scanner
-
-[![Python](https://img.shields.io/badge/Python-0a2e1a?style=for-the-badge&logo=python&logoColor=4ade80)](#) [![Security](https://img.shields.io/badge/Post--Quantum-0a2e1a?style=for-the-badge&logo=letsencrypt&logoColor=22c55e)](#) [![TLS](https://img.shields.io/badge/TLS%20%2F%20PQC-0a2e1a?style=for-the-badge&logo=openssl&logoColor=60a5fa)](#)
-
-Audits TLS endpoints for **post-quantum cryptography readiness** and generates AI-computed risk scores to surface cryptographic vulnerabilities.
-
-- Detects PQC algorithms (ML-KEM, ML-DSA) and hybrid schemes
-- Flags systems exposed to "Harvest Now, Decrypt Later" attacks
-- Outputs structured risk reports per scanned endpoint
-
-🔗 **GitHub:** [PulindGadhia/quantumshield-pqc-scanner](https://github.com/PulindGadhia/quantumshield-pqc-scanner) &nbsp;|&nbsp;
-
-<h4>📸 Preview</h4>
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/PulindGadhia/quantumshield-pqc-scanner/main/Screenshot%202026-03-11%20220127.png" width="50%" />
-<br><br>
-
-<img src="https://raw.githubusercontent.com/PulindGadhia/quantumshield-pqc-scanner/main/Screenshot%202026-03-15%20214345.png" width="50%" />
-
-</div>
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                    IMPACT / WHAT I'VE BUILT                    -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## `$ What I've Built`
-
-```
-  Domain               │  Project                      │  Problem Solved
-  ─────────────────────┼───────────────────────────────┼──────────────────────────────────
-  🎙️ Audio AI          │  AI Voice Detector             │  Classify real vs synthetic speech
-  🔐 Quantum Security  │  QuantumShield PQC Scanner     │  Audit TLS for post-quantum readiness
-  ☁️ Cloud             │  GCP Arcade Facilitator 2025   │  Champion Tier · Cohort 2
-```
-
----
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--                      TECH STACK                                -->
@@ -174,71 +107,6 @@ Audits TLS endpoints for **post-quantum cryptography readiness** and generates A
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                   CURRENTLY FOCUSED ON                         -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## `$ Currently Focused On`
-
-<table>
-<thead>
-<tr>
-<th align="center">Priority</th>
-<th align="left">Area</th>
-<th align="left">Direction</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center"><strong>01</strong></td>
-<td><strong>ML Fundamentals</strong></td>
-<td>Learning how to build models from scratch like regression, trees, SVMs, and ensembles</td>
-</tr>
-
-<tr>
-<td align="center"><strong>02</strong></td>
-<td><strong>Deep Learning</strong></td>
-<td>Learning neural networks, CNNs, and sequence models by practicing</td>
-</tr>
-
-<tr>
-<td align="center"><strong>03</strong></td>
-<td><strong>Google Cloud</strong></td>
-<td>Preparing for the Associate Cloud Engineer exam</td>
-</tr>
-
-<tr>
-<td align="center"><strong>04</strong></td>
-<td><strong>AI Security</strong></td>
-<td>Working on deepfake detection and basic quantum-safe ideas</td>
-</tr>
-</tbody>
-</table>
-
----
-
-## `$ How I Think`
-
-Do not start coding immediately.
-
-First, understand the problem clearly. Then break it into smaller parts and build a simple working version. After that, improve it step by step.
-
-Focus on depth over breadth. Understanding one concept well is more valuable than knowing many without clarity.
-
-Learning happens through building projects, reading documentation, and improving based on mistakes.
-
----
-
-## `$ Principles I Follow`
-
-- Write simple and clear code  
-- Focus on understanding concepts, not just using tools  
-- Build real projects, not just small demos  
-- Improve step by step  
-- Work on problems that are useful
-  
---- 
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--                     GITHUB STATS                               -->
