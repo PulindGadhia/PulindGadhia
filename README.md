@@ -1,216 +1,126 @@
-<div align="center">
+# GitHub Profiler
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a2e1a,50:0f5132,100:145a32&height=200&section=header&text=Pulind%20Gadhia&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20intelligent%20systems%2C%20one%20model%20at%20a%20time&descAlignY=58&descSize=18&descColor=4ade80" width="100%"/>
+## Introduction
+A professional, enterprise-quality animated GitHub profile generator. Built strictly using Clean Architecture and SOLID principles, this tool fetches your GitHub data and generates beautiful, animated SVG heatmaps, neofetch-style cards, and an ASCII portrait from your avatar—all capable of being embedded directly into your GitHub README.
 
-<br/>
+## Demo GIF
+![Demo](game.gif)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=1000&color=4ADE80&center=true&vCenter=true&width=720&lines=AI+%26+ML+Student+%40+Marwadi+University;Focused+on+Building+Practical+AI+Systems;Deepfake+Detection+%7C+Quantum+Security+%7C+Cloud;Actively+Contributing+to+Open+Source;Learning+by+Building+and+Solving+Real+Problems)](https://git.io/typing-svg)
+## Features
+- **Terminal Rendering Engine**: Zero-dependency ANSI layout engine for rich terminal output.
+- **SVG Animation Engine**: Object-oriented SVG generation without heavy dependencies.
+- **ASCII Portrait Generator**: Leverages OpenCV and rembg to convert your avatar to a crisp ASCII portrait.
+- **GitHub GraphQL Client**: Highly efficient data fetching.
+- **Heatmap Generator**: Customizable SVG heatmap of your contribution calendar.
+- **Neofetch Card**: Beautiful system-style summary card for your GitHub profile.
+- **README Generator**: Automates injecting assets into a Markdown template.
+- **Automated CI/CD**: Pre-configured GitHub Actions to run the generator on a schedule.
+- **CLI**: A robust Command-Line Interface for manual execution.
 
-<br/><br/>
-<p>
-  <img src="https://img.shields.io/badge/Focus-AI%20Engineering-4ade80?style=flat-square"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Currently%20Learning-Advanced%20Git%20Workflows-22c55e?style=flat-square"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Building-Practical%20AI%20Tools-22c55e?style=flat-square"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Interests-AI%20Security%20%7C%20ML%20Systems-16a34a?style=flat-square"/>
-  &nbsp;
-</p>
+## Architecture
+This project adheres strictly to **Clean Architecture** to ensure maintainability, scalability, and independence from external frameworks.
+- **Domain**: Core business entities (`GitHubUser`, `ContributionDay`, `Repository`) and interfaces.
+- **Infrastructure**: Adapters for GitHub GraphQL, SVG building, and Terminal Rendering.
+- **Application**: Use cases defining specific generators (ASCII, Heatmap, Neofetch).
+- **Presentation**: The argparse CLI, serving as the composition root for Dependency Injection.
 
-</div>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                        ABOUT ME                                -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## `$ whoami`
-
-```python
-class PulindGadhia:
-    role        = "CSE (AI & ML) Student · Marwadi University"
-    location    = "Rajkot, Gujarat, India 🇮🇳"
-    goal        = "AI Engineer"
-
-    languages   = ["Python", "C++", "Java", "C", "SQL"]
-
-    current_focus = [
-        "Building Qyverion",
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Cloud Computing",
-        "Cross-Platform Development",
-    ]
-
-    philosophy  = "Build first. Understand deeply. Ship when it matters."
+## Project Structure
+```text
+.
+├── src/
+│   └── github_profiler/
+│       ├── domain/            # Entities and Interfaces
+│       ├── infrastructure/    # API Clients, SVG & Terminal Engines
+│       ├── application/       # Asset Generators (Heatmap, ASCII, etc.)
+│       └── presentation/      # CLI Interface
+├── tests/                     # Unit Tests
+├── output/                    # Generated Assets
+├── main.py                    # Entry Point
+├── pyproject.toml             # Project Configuration (Ruff, Black, MyPy)
+└── requirements.txt           # Dependencies
 ```
 
----
+## Installation
+Requires Python 3.11+.
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/github-profiler.git
+   cd github-profiler
+   ```
+2. Set up a virtual environment and install dependencies:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                      TECH STACK                                -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+## Usage
+You must generate a GitHub Personal Access Token (PAT) with read access to your profile data and repositories. Set it as an environment variable:
+```bash
+export GITHUB_TOKEN="your_personal_access_token"
+```
 
-## `$ Tech Stack`
+Run the generator:
+```bash
+python main.py <github_username> --output-dir ./output
+```
 
-<table>
-<tr>
-<td valign="top" width="25%">
+## CLI Examples
+**Basic Execution:**
+```bash
+python main.py octocat
+```
 
-**Languages**
+**Custom Output Directory & Verbose Logging:**
+```bash
+python main.py octocat --output-dir ./assets --verbose
+```
 
-![Python](https://img.shields.io/badge/Python-0a2e1a?style=for-the-badge&logo=python&logoColor=4ade80&logoWidth=25)
-![C++](https://img.shields.io/badge/C++-0a2e1a?style=for-the-badge&logo=cplusplus&logoColor=60a5fa&logoWidth=25)
-![Java](https://img.shields.io/badge/Java-0a2e1a?style=for-the-badge&logo=openjdk&logoColor=f97316&logoWidth=25)
-![C](https://img.shields.io/badge/C-0a2e1a?style=for-the-badge&logo=c&logoColor=60a5fa&logoWidth=25)
-![SQL](https://img.shields.io/badge/SQL-0a2e1a?style=for-the-badge&logo=postgresql&logoColor=4ade80&logoWidth=25)
-![MATLAB](https://img.shields.io/badge/MATLAB-0a2e1a?style=for-the-badge&logo=mathworks&logoColor=f97316&logoWidth=25)
+**Passing Token Explicitly:**
+```bash
+python main.py octocat --token "ghp_xxxxxxxxxxxx"
+```
 
-</td>
-<td valign="top" width="25%">
+## Configuration
+The project is pre-configured with industry-standard development tools via `pyproject.toml`:
+- **Ruff**: For lightning-fast linting.
+- **Black**: For uncompromising code formatting.
+- **MyPy**: For strict static type checking.
+- **Pytest**: For unit testing.
 
-**AI · ML · Audio**
+## Generated Assets
+When you run the tool, the following files are produced in the target output directory:
+- `assets/heatmap.svg`: The contribution calendar heatmap.
+- `assets/neofetch.svg`: The Neofetch-style profile card with ASCII art.
+- `README.md`: The orchestrated Markdown file containing your generated assets.
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-0a2e1a?style=for-the-badge&logo=scikitlearn&logoColor=f97316&logoWidth=25)
-![NumPy](https://img.shields.io/badge/NumPy-0a2e1a?style=for-the-badge&logo=numpy&logoColor=60a5fa&logoWidth=25)
-![Pandas](https://img.shields.io/badge/Pandas-0a2e1a?style=for-the-badge&logo=pandas&logoColor=4ade80&logoWidth=25)
-![librosa](https://img.shields.io/badge/librosa-0a2e1a?style=for-the-badge&logo=python&logoColor=fbbf24&logoWidth=25)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-0a2e1a?style=for-the-badge&logo=python&logoColor=4ade80&logoWidth=25)
+## Testing
+Run the test suite using `pytest`:
+```bash
+pytest
+```
+To run linting and type checking:
+```bash
+ruff check .
+black --check .
+mypy src/
+```
 
-</td>
-<td valign="top" width="25%">
+## Roadmap
+- [ ] Add support for custom SVG color themes (e.g., Dracula, Nord).
+- [ ] Add more granular animation controls to the SVG Engine.
+- [ ] Implement a caching layer for the GraphQL client to minimize API calls.
+- [ ] Expand the neofetch card with language usage statistics.
 
-**Security · Cloud**
+## Contributing
+Contributions are welcome. Please ensure that all code adheres to Clean Architecture and SOLID principles. 
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/amazing-feature`).
+3. Ensure tests, linting, and type checks pass.
+4. Commit your changes (`git commit -m 'feat: Add amazing feature'`).
+5. Push to the branch (`git push origin feature/amazing-feature`).
+6. Open a Pull Request.
 
-![Cryptography](https://img.shields.io/badge/cryptography-0a2e1a?style=for-the-badge&logo=letsencrypt&logoColor=4ade80&logoWidth=25)
-![TLS/SSL](https://img.shields.io/badge/TLS%20%2F%20SSL-0a2e1a?style=for-the-badge&logo=openssl&logoColor=60a5fa&logoWidth=25)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-0a2e1a?style=for-the-badge&logo=googlecloud&logoColor=38bdf8&logoWidth=25)
-![Linux](https://img.shields.io/badge/Linux-0a2e1a?style=for-the-badge&logo=linux&logoColor=fbbf24&logoWidth=25)
-
-</td>
-<td valign="top" width="25%">
-
-**Tools · Workflow**
-
-![VS Code](https://img.shields.io/badge/VS%20Code-0a2e1a?style=for-the-badge&logo=visualstudiocode&logoColor=60a5fa&logoWidth=25)
-![Git](https://img.shields.io/badge/Git-0a2e1a?style=for-the-badge&logo=git&logoColor=f97316&logoWidth=25)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0a2e1a?style=for-the-badge&logo=githubactions&logoColor=4ade80&logoWidth=25)
-![Jupyter](https://img.shields.io/badge/Jupyter-0a2e1a?style=for-the-badge&logo=jupyter&logoColor=fbbf24&logoWidth=25)
-![Kaggle](https://img.shields.io/badge/Kaggle-0a2e1a?style=for-the-badge&logo=kaggle&logoColor=38bdf8&logoWidth=25)
-
-</td>
-</tr>
-</table>
-
----
-
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     GITHUB STATS                               -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## `$ GitHub Stats`
-
-<div align="center">
-
-<!-- Row 1: Profile details card (full width) -->
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=PulindGadhia&theme=github_dark"/>
-
-<br/>
-
-<!-- Row 2: Stats card + Streak card + Productive time card -->
-<img width="40%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=PulindGadhia&theme=github_dark"/>
-&nbsp;
-<img width="40%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=PulindGadhia&theme=github_dark&utcOffset=5.5"/>
-<img width="60%" src="https://github-readme-streak-stats.herokuapp.com/?user=PulindGadhia&theme=dark&border_radius=8&hide_border=true&background=0d1117&stroke=30a14e&ring=30a14e&fire=fbbf24&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=8b949e"/>
-&nbsp;
-
-<br/>
-
-<!-- Row 3: Top Languages by Repo (with logos) + Top Languages by Commit (with logos) -->
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PulindGadhia&layout=donut&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4ade80&text_color=86efac&border_radius=10&langs_count=6&title=Top%20Languages%20by%20Repo"/>
-&nbsp;
-
-</div>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                    ACTIVITY GRAPH                              -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## `$ Contribution Activity`
-
-<div align="center">
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=PulindGadhia&bg_color=0d1117&color=58a6ff&line=30a14e&point=fbbf24&area=true&area_color=30a14e&hide_border=true&radius=8)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
----
-
-
-
-## `$ GitHub Contribution Game`
-
-![Space Shooter Game](https://raw.githubusercontent.com/PulindGadhia/PulindGadhia/main/game.gif)
-
----
-
-
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                      QUOTE                                     -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<hr>
-
-<p align="center">
-<i>"Understanding a problem deeply is more valuable than solving it quickly."</i>
-</p>
-
-<hr>
-
-
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                      CONNECT                                   -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## `$ Connect`
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/pulind-gadhia-00aab1327" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-&nbsp;
-<a href="https://github.com/PulindGadhia" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-@PulindGadhia-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-&nbsp;
-<a href="https://github.com/PulindGadhia?tab=repositories" target="_blank">
-  <img src="https://img.shields.io/badge/Repositories-Explore%20My%20Work-16a34a?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-&nbsp;
-<a href="mailto:gadhiapulind@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-gadhiapulind%40gmail.com-d14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-<br/><br/>
-
-<hr>
-
-<p align="center">
-💬 <b>Open to collaborations, mentorship, hackathons, and meaningful conversations</b>
-</p>
-
-<hr>
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:145a32,50:0f5132,100:0a2e1a&height=120&section=footer&animation=fadeIn" width="100%"/>
-
-</div>
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

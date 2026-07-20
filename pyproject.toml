@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-profiler"
+version = "0.1.0"
+description = "A professional animated GitHub profile generator."
+authors = [{ name = "Pulind Gadhia" }]
+requires-python = ">=3.11"
+dependencies = [
+    "requests==2.32.3",
+    "beautifulsoup4==4.12.3",
+    "Pillow>=10.0.0",
+    "numpy>=1.26.0",
+    "opencv-python>=4.8.0",
+    "rembg>=2.0.50",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.3.0",
+    "black>=24.0.0",
+    "mypy>=1.9.0",
+    "types-requests>=2.31.0",
+    "types-Pillow>=10.2.0"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]

@@ -4,6 +4,8 @@ Pillow>=10.0.0
 numpy>=1.26.0
 opencv-python>=4.8.0
 rembg>=2.0.50
+
+[dev]
 pytest>=8.0.0
 ruff>=0.3.0
 black>=24.0.0
