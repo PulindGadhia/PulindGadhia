@@ -18,31 +18,13 @@
 
 <table align="center">
 <tr>
-<td>
-
-<table
-border="1"
-cellpadding="0"
-cellspacing="0"
-style="border-collapse:collapse;border:1px solid #30363d;"
->
-
-<tr>
-
-<td width="50%" align="center" valign="top">
-
-<img src="./PulindGadhia-ascii.svg" width="100%"/>
-
+<td align="center" valign="top">
+<img src="./PulindGadhia-ascii.svg" width="470" alt="Pulind Gadhia — ASCII portrait" />
 </td>
-
-<td width="50%" align="center" valign="top">
-
-<img src="./info-card.svg" width="100%"/>
-
+<td align="center" valign="top">
+<img src="./info-card.svg" width="470" alt="Pulind Gadhia — AI & ML profile" />
 </td>
-
 </tr>
-
 </table>
 
 </td>
