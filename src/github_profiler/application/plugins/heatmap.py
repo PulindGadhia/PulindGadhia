@@ -1,6 +1,6 @@
 """Contribution Heatmap Plugin."""
 
-from github_profiler.domain.components import ComponentBox, ComponentGroup, UIComponent
+from github_profiler.domain.components import Canvas, ComponentBox, UIComponent
 from github_profiler.domain.interfaces import IProfilePlugin
 from github_profiler.domain.models import GitHubUser
 from github_profiler.domain.theme import Theme
@@ -13,11 +13,15 @@ class HeatmapPlugin(IProfilePlugin):
     def name(self) -> str:
         return "heatmap"
 
+    @property
+    def pipeline(self) -> str:
+        return "dashboard"
+
     def generate(self, user: GitHubUser, theme: Theme) -> UIComponent:
         CELL_SIZE = 10
         CELL_GAP = 4
 
-        group = ComponentGroup(x=0, y=0)
+        canvas = Canvas(x=0, y=0)
 
         # We assume contribution_calendar is sorted chronologically
         days = user.contribution_calendar
@@ -36,7 +40,7 @@ class HeatmapPlugin(IProfilePlugin):
             stroke_color=theme.window.border_color,
             stroke_width=1,
         )
-        group.children.append(bg)
+        canvas.children.append(bg)
 
         # Chunk into weeks (columns)
         weeks = [days[i : i + 7] for i in range(0, len(days), 7)]
@@ -62,9 +66,9 @@ class HeatmapPlugin(IProfilePlugin):
                     animation_type="fade-in",
                     animation_delay_ms=week_idx * 15,  # Cascade per column
                 )
-                group.children.append(cell)
+                canvas.children.append(cell)
 
-        return group
+        return canvas
 
 
 def get_plugin() -> IProfilePlugin:

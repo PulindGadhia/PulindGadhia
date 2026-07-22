@@ -15,6 +15,14 @@ from github_profiler.domain.theme import Theme
 
 class MeasurementEngine:
     """Calculates implicit dimensions."""
+    
+    _warned = False
+    
+    def __init__(self) -> None:
+        if not MeasurementEngine._warned:
+            import warnings
+            warnings.warn("MeasurementEngine is deprecated and will be removed in v3.1.", DeprecationWarning, stacklevel=2)
+            MeasurementEngine._warned = True
 
     def measure(self, component: UIComponent) -> UIComponent:
         if isinstance(component, ComponentText):
@@ -36,6 +44,14 @@ class MeasurementEngine:
 
 class LayoutEngine:
     """Calculates absolute X/Y positions."""
+    
+    _warned = False
+    
+    def __init__(self) -> None:
+        if not LayoutEngine._warned:
+            import warnings
+            warnings.warn("LayoutEngine is deprecated and will be removed in v3.1.", DeprecationWarning, stacklevel=2)
+            LayoutEngine._warned = True
 
     def layout(self, component: UIComponent) -> UIComponent:
         if isinstance(component, ComponentGroup):
@@ -65,6 +81,14 @@ class LayoutEngine:
 
 class TimelineOrchestrator:
     """Calculates sequential animation delays."""
+    
+    _warned = False
+    
+    def __init__(self) -> None:
+        if not TimelineOrchestrator._warned:
+            import warnings
+            warnings.warn("TimelineOrchestrator is deprecated and will be removed in v3.1.", DeprecationWarning, stacklevel=2)
+            TimelineOrchestrator._warned = True
 
     def sequence(self, component: UIComponent, delay: int = 0) -> int:
         component.animation_delay_ms = delay
@@ -84,10 +108,17 @@ class TimelineOrchestrator:
         return current_delay
 
 
+import warnings
+
 class SVGEngine(IComponentRenderer):
     """Final pipeline orchestrator and SVG generator."""
+    
+    _warned = False
 
     def __init__(self) -> None:
+        if not SVGEngine._warned:
+            warnings.warn("SVGEngine is deprecated and will be removed in v3.1.", DeprecationWarning, stacklevel=2)
+            SVGEngine._warned = True
         self.measurer = MeasurementEngine()
         self.layouter = LayoutEngine()
         self.timeline = TimelineOrchestrator()

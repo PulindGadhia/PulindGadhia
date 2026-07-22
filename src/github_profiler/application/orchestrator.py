@@ -15,35 +15,52 @@ from github_profiler.domain.interfaces import (
 
 
 class GenerationService:
-    """Core domain logic wrapper."""
+    """Legacy profile generation pipeline."""
+    
+    _warned = False
 
     def __init__(
-        self, github: IGitHubClient, cache: ICache, renderer: IComponentRenderer
+        self,
+        github_client: IGitHubClient,
+        cache: ICache,
+        renderer: IComponentRenderer,
     ) -> None:
-        self.github = github
+        if not GenerationService._warned:
+            import warnings
+            warnings.warn("GenerationService is deprecated and will be removed in v3.1.", DeprecationWarning, stacklevel=2)
+            GenerationService._warned = True
+        self.github = github_client
         self.cache = cache
         self.renderer = renderer
 
 
 class ProfileOrchestrator:
-    """High-level profile builder."""
+    """Legacy facade for rendering standard profiles."""
+    
+    _warned = False
 
     def __init__(
         self,
-        config_mgr: ConfigManager,
-        plugin_mgr: PluginManager,
-        gen_service: GenerationService,
-        event_bus: IEventBus,
+        config: ConfigManager,
+        plugins: PluginManager,
+        gen: GenerationService,
+        events: IEventBus,
     ) -> None:
-        self.config = config_mgr
-        self.plugins = plugin_mgr
-        self.gen = gen_service
-        self.events = event_bus
+        if not ProfileOrchestrator._warned:
+            import warnings
+            warnings.warn("ProfileOrchestrator is deprecated and will be removed in v3.1.", DeprecationWarning, stacklevel=2)
+            ProfileOrchestrator._warned = True
+        self.config = config
+        self.plugins = plugins
+        self.gen = gen
+        self.events = events
 
     def build_profile(self, username: str) -> str:
         """Executes the full pipeline to generate the SVG profile."""
 
+        # ------------------------------------------------------------------
         # 1. Fetch User Data
+        # ------------------------------------------------------------------
         self.events.publish(Event("pre_fetch", {"username": username}))
 
         # Check cache first
@@ -54,20 +71,42 @@ class ProfileOrchestrator:
 
         self.events.publish(Event("post_fetch", {"user": user}))
 
-        # 2. Load Config & Plugins
+        # ------------------------------------------------------------------
+        # 2. Load Theme & Plugins
+        # ------------------------------------------------------------------
         theme = self.config.get_theme()
         plugin_names = self.config.get_plugins()
         active_plugins = self.plugins.get_plugins(plugin_names)
 
+        # ------------------------------------------------------------------
         # 3. Generate Components
+        # ------------------------------------------------------------------
         components: List[UIComponent] = []
-        for p in active_plugins:
-            components.append(p.generate(user, theme))
 
-        self.events.publish(Event("pre_render", {"components": components}))
+        for plugin in active_plugins:
+            component = plugin.generate(user, theme)
+            components.append(component)
 
+        self.events.publish(
+            Event(
+                "pre_render",
+                {"components": components},
+            )
+        )
+
+        # ------------------------------------------------------------------
         # 4. Render Final SVG
-        result = self.gen.renderer.render(components, theme)
+        # ------------------------------------------------------------------
+        result = self.gen.renderer.render(
+            components,
+            theme,
+        )
 
-        self.events.publish(Event("post_render", {"length": len(result)}))
+        self.events.publish(
+            Event(
+                "post_render",
+                {"length": len(result)},
+            )
+        )
+
         return result

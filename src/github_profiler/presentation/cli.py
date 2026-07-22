@@ -7,6 +7,10 @@ from typing import List, Optional
 
 from github_profiler.application.config_manager import ConfigManager
 from github_profiler.application.event_bus import EventBus
+from github_profiler.application.dashboard_orchestrator import (
+    DashboardGenerationService,
+    DashboardOrchestrator,
+)
 from github_profiler.application.orchestrator import (
     GenerationService,
     ProfileOrchestrator,
@@ -17,6 +21,7 @@ from github_profiler.infrastructure.cache import LocalFSCache
 from github_profiler.infrastructure.graphql_client import GitHubGraphQLClient
 from github_profiler.infrastructure.plugin_loader import FilesystemPluginLoader
 from github_profiler.infrastructure.rendering import SVGEngine
+from github_profiler.infrastructure.dashboard_renderer import DashboardRenderer
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -49,16 +54,16 @@ def run_cli(args: Optional[List[str]] = None) -> int:
             # Infrastructure
             github_client = GitHubGraphQLClient()
             cache = LocalFSCache(cache_dir)
-            svg_engine = SVGEngine()
+            renderer = DashboardRenderer()
             plugin_loader = FilesystemPluginLoader()
 
             # Application
             event_bus = EventBus()
             config_mgr = ConfigManager(config_path)
             plugin_mgr = PluginManager(plugin_loader)
-            gen_service = GenerationService(github_client, cache, svg_engine)
+            gen_service = DashboardGenerationService(github_client, cache, renderer)
 
-            orchestrator = ProfileOrchestrator(
+            orchestrator = DashboardOrchestrator(
                 config_mgr, plugin_mgr, gen_service, event_bus
             )
 

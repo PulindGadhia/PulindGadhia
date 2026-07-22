@@ -78,6 +78,17 @@ class IEventBus(ABC):
 class IProfilePlugin(ABC):
     """Interface for visual plugins."""
 
+    @property
+    @abstractmethod
+    def name(self) -> str:
+        """Returns the unique string identifier for the plugin."""
+        pass
+
+    @property
+    def pipeline(self) -> str:
+        """Returns the pipeline supported by this plugin ('legacy' or 'dashboard')."""
+        return "legacy"
+
     @abstractmethod
     def generate(self, user: GitHubUser, theme: Theme) -> UIComponent:
         """Generates the UIComponent structure for this plugin's section.
@@ -121,6 +132,23 @@ class IComponentRenderer(ABC):
 
         Returns:
             The rendered string.
+        """
+        pass
+
+
+class IDashboardRenderer(ABC):
+    """Interface for rendering a V3 Dashboard."""
+
+    @abstractmethod
+    def render(self, dashboard: Any, theme: Theme) -> str:
+        """Renders the root Dashboard tree into a string.
+
+        Args:
+            dashboard: The root Dashboard component (typed Any to avoid circular import if needed).
+            theme: Theme for global CSS/styling.
+
+        Returns:
+            The rendered SVG string.
         """
         pass
 

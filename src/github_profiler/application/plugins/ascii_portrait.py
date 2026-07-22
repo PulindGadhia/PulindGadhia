@@ -15,8 +15,8 @@ except (ImportError, SystemExit):
 
 
 from github_profiler.domain.components import (
+    Canvas,
     ComponentBox,
-    ComponentGroup,
     ComponentText,
     UIComponent,
 )
@@ -38,6 +38,10 @@ class AsciiPortraitPlugin(IProfilePlugin):
     @property
     def name(self) -> str:
         return "ascii_portrait"
+
+    @property
+    def pipeline(self) -> str:
+        return "dashboard"
 
     def _fetch_avatar(self, url: str) -> bytes:
         if not url:
@@ -85,7 +89,7 @@ class AsciiPortraitPlugin(IProfilePlugin):
     def generate(self, user: GitHubUser, theme: Theme) -> UIComponent:
         lines = self._image_to_ascii(self._fetch_avatar(user.avatar_url))
 
-        group = ComponentGroup(x=0, y=0)
+        group = Canvas(x=0, y=0)
 
         bg = ComponentBox(
             width=self.output_width * 10,

@@ -1,7 +1,6 @@
-# GitHub Profiler
+# GitHub Profiler v3.0
 
-## Introduction
-A professional, enterprise-quality animated GitHub profile generator. Built strictly using Clean Architecture and SOLID principles, this tool fetches your GitHub data and generates beautiful, animated SVG heatmaps, neofetch-style cards, and an ASCII portrait from your avatar—all capable of being embedded directly into your GitHub README.
+> **Note:** V3 introduces the new Dashboard Layout Engine. Please see the [V3 Documentation](docs/v3_documentation.md) for architecture details, plugin development guides, and legacy migration instructions. Built strictly using Clean Architecture and SOLID principles, this tool fetches your GitHub data and generates beautiful, animated SVG heatmaps, neofetch-style cards, and an ASCII portrait from your avatar—all capable of being embedded directly into your GitHub README.
 
 ## Demo GIF
 ![Demo](game.gif)

@@ -48,3 +48,5 @@ addopts = "-ra -q"
 testpaths = [
     "tests",
 ]
+[project.scripts]
+github-profiler = "github_profiler.presentation.cli:run_cli"

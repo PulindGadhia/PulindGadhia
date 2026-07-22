@@ -1,8 +1,8 @@
 """Neofetch Plugin for GitHub Profiler."""
 
 from github_profiler.domain.components import (
+    Canvas,
     ComponentBox,
-    ComponentGroup,
     ComponentText,
     UIComponent,
 )
@@ -18,6 +18,10 @@ class NeofetchPlugin(IProfilePlugin):
     def name(self) -> str:
         return "neofetch"
 
+    @property
+    def pipeline(self) -> str:
+        return "dashboard"
+
     def generate(self, user: GitHubUser, theme: Theme) -> UIComponent:
         """Generates the neofetch UIComponent tree."""
         lines = [
@@ -30,7 +34,7 @@ class NeofetchPlugin(IProfilePlugin):
             f"Repos: {user.stats.total_repositories}",
         ]
 
-        group = ComponentGroup(x=0, y=0)
+        canvas = Canvas(x=0, y=0)
 
         # Terminal Background
         bg = ComponentBox(
@@ -41,7 +45,7 @@ class NeofetchPlugin(IProfilePlugin):
             stroke_color=theme.window.border_color,
             stroke_width=1,
         )
-        group.children.append(bg)
+        canvas.children.append(bg)
 
         # Text lines
         for i, text in enumerate(lines):
@@ -53,9 +57,9 @@ class NeofetchPlugin(IProfilePlugin):
                 font_size=theme.typography.text_size,
                 animation_type="typewriter",
             )
-            group.children.append(line_comp)
+            canvas.children.append(line_comp)
 
-        return group
+        return canvas
 
 
 def get_plugin() -> IProfilePlugin:
