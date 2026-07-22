@@ -1,5 +1,0 @@
-plugins = [
-    "neofetch",
-    "heatmap",
-    "ascii_portrait"
-]

@@ -1,2 +1,0 @@
-[console_scripts]
-github-profiler = github_profiler.presentation.cli:run_cli
