@@ -1,22 +1,22 @@
 {
   "username": "PulindGadhia",
-  "generated_at": "2026-08-26T07:10:45Z",
+  "generated_at": "2026-08-27T17:40:12Z",
   "range": {
     "start": "2025-08-24",
+    "end": "2026-08-27"
+  },
+  "total_contributions": 150,
+  "active_days": 57,
+  "avg_per_active_day": 2.6,
+  "current_streak": {
+    "length": 36,
+    "start": "2026-07-22",
     "end": "2026-08-26"
   },
-  "total_contributions": 149,
-  "active_days": 56,
-  "avg_per_active_day": 2.7,
-  "current_streak": {
-    "length": 35,
-    "start": "2026-07-22",
-    "end": "2026-08-25"
-  },
   "longest_streak": {
-    "length": 35,
+    "length": 36,
     "start": "2026-07-22",
-    "end": "2026-08-25"
+    "end": "2026-08-26"
   },
   "best_day": {
     "date": "2026-03-01",
@@ -73,7 +73,7 @@
     },
     {
       "month": "2026-08",
-      "total": 55
+      "total": 56
     }
   ],
   "days": [
@@ -1547,6 +1547,10 @@
     },
     {
       "date": "2026-08-26",
+      "count": 1
+    },
+    {
+      "date": "2026-08-27",
       "count": 0
     }
   ]
